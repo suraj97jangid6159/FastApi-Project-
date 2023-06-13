@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Helpdesk</title>
+</head>
+<body>
+    <h1>Health Helpdesk</h1>
+
+    <form method="POST" action="/">
+        <label for="condition">Health Condition:</label>
+        <select name="condition" id="condition">
+            <option value="Condition 1">Condition 1</option>
+            <option value="Condition 2">Condition 2</option>
+            <!-- Add more condition options here -->
+        </select>
+        <br><br>
+        
+        <label for="severity">Severity of Condition:</label>
+        <select name="severity" id="severity">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <br><br>
+
+        <label for="message">Enter your message:</label>
+        <input type="text" name="message" id="message">
+        <br><br>
+
+        <input type="submit" value="Send">
+    </form>
+
+    <h2>Response:</h2>
+    <p>{{ response }}</p>
+</body>
+</html>
